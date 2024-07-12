@@ -46,7 +46,8 @@ if name_on_order:
 else:
     st.error("Please tell us your name!")
 
-    
-#st.write("You selected:", options)
-# Below is how people comment blocks
+#New section to display fruityvise nutrition info
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
 
